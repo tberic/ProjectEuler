@@ -1,0 +1,134 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3702,        125]
+NotebookOptionsPosition[      3064,         97]
+NotebookOutlinePosition[      3409,        112]
+CellTagsIndexPosition[      3366,        109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"<<", "NumberTheory`NumberTheoryFunctions`"}]], "Input",
+ CellChangeTimes->{{3.538259698710209*^9, 3.5382597337362123`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "obspkg"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], \
+"\<\"\[NoBreak]\\!\\(\\\"NumberTheory`NumberTheoryFunctions`\\\"\\)\[NoBreak] \
+is now obsolete. The legacy version being loaded may conflict with current \
+Mathematica functionality. See the Compatibility Guide for updating \
+information. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:Compatibility/Tutorials/NumberTheory/\
+NumberTheoryFunctions\\\", ButtonNote -> \\\"General::obspkg\\\"]\\)\"\>"}]], \
+"Message", "MSG",
+ CellChangeTimes->{3.538259735064288*^9}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AliquotCycle", "[", "12496", "]"}]], "Input",
+ CellChangeTimes->{{3.538259724660693*^9, 3.538259741329646*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"12496", ",", "14288", ",", "15472", ",", "14536", ",", "14264"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.5382597416976676`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AliquotCycle", "[", "120", "]"}]], "Input",
+ CellChangeTimes->{{3.53825977793274*^9, 3.5382597837500725`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "0", "}"}]], "Output",
+ CellChangeTimes->{{3.5382597788027897`*^9, 3.5382597843961096`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"max", " ", "=", " ", "0"}], ";", " ", 
+  RowBox[{"maxn", " ", "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"n", " ", "=", " ", "1"}], ",", " ", 
+   RowBox[{"n", " ", "\[LessEqual]", " ", 
+    RowBox[{"10", "^", "6"}]}], ",", " ", 
+   RowBox[{"n", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Length", "[", 
+       RowBox[{"AliquotCycle", "[", "n", "]"}], "]"}], " ", ">", " ", "max"}],
+      ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"max", " ", "=", " ", 
+       RowBox[{"Length", "[", 
+        RowBox[{"AliquotCycle", "[", "n", "]"}], "]"}]}], ";", " ", 
+      RowBox[{"maxn", " ", "=", " ", "n"}]}]}], "\[IndentingNewLine]", 
+    "]"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.5382598025841503`*^9, 3.538259860889485*^9}}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.5382606281643705`*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{360, Automatic}, {Automatic, 45}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 147, 2, 31, "Input"],
+Cell[729, 26, 656, 14, 56, "Message"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1422, 45, 135, 2, 25, "Input"],
+Cell[1560, 49, 170, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1767, 58, 134, 2, 31, "Input"],
+Cell[1904, 62, 120, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2061, 69, 905, 22, 132, "Input"],
+Cell[2969, 93, 79, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

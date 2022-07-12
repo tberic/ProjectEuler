@@ -1,0 +1,219 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6285,        210]
+NotebookOptionsPosition[      5015,        167]
+NotebookOutlinePosition[      5360,        182]
+CellTagsIndexPosition[      5317,        179]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"A", "[", "x_Integer", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Select", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"n", ",", " ", 
+          RowBox[{"Mod", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"10", "^", "n"}], "-", "1"}], ")"}], "/", "9"}], ",", 
+            " ", "x"}], "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "1", ",", "x"}], "}"}]}], "]"}], ",", " ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], " ", "\[Equal]", " ", "0"}], "&"}]}],
+      "\[IndentingNewLine]", "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "[", 
+   RowBox[{"[", "1", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.5377272288131003`*^9, 3.5377272613979645`*^9}, {
+  3.537727328699814*^9, 3.5377274362579656`*^9}, {3.5377276491701436`*^9, 
+  3.5377276596127405`*^9}, {3.5377281131696825`*^9, 3.537728137304063*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"cnt", " ", "=", " ", "0"}], ";", " ", 
+    RowBox[{"s", " ", "=", " ", "0"}], ";", " ", 
+    RowBox[{"n", " ", "=", " ", "91"}]}], ",", " ", 
+   RowBox[{"cnt", " ", "<", " ", "25"}], ",", " ", 
+   RowBox[{"n", "++"}], ",", " ", 
+   RowBox[{"If", "[", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"GCD", "[", 
+        RowBox[{"n", ",", " ", "10"}], "]"}], " ", "\[Equal]", " ", "1"}], 
+      " ", "&&", " ", 
+      RowBox[{"!", 
+       RowBox[{"PrimeQ", "[", "n", "]"}]}], " ", "&&", " ", 
+      RowBox[{
+       RowBox[{"Mod", "[", 
+        RowBox[{
+         RowBox[{"n", "-", "1"}], ",", " ", 
+         RowBox[{"A", "[", "n", "]"}]}], "]"}], " ", "\[Equal]", " ", "0"}]}],
+      ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"cnt", "++"}], ";", " ", 
+      RowBox[{"s", " ", "+=", " ", "n"}], ";", " ", 
+      RowBox[{"Print", "[", "n", "]"}]}]}], "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.53772736482288*^9, 3.537727367483032*^9}, {
+  3.5377274403141975`*^9, 3.537727532611477*^9}, {3.537727588845693*^9, 
+  3.537727617833351*^9}, {3.537727667256178*^9, 3.5377276679052153`*^9}, {
+  3.53772769875198*^9, 3.5377277239144187`*^9}, {3.5377319167702365`*^9, 
+  3.537731916796238*^9}, {3.5377321958611994`*^9, 3.5377322921987095`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["91"], "Print",
+ CellChangeTimes->{3.5377322925357285`*^9}],
+
+Cell[BoxData["259"], "Print",
+ CellChangeTimes->{3.5377322925997324`*^9}],
+
+Cell[BoxData["451"], "Print",
+ CellChangeTimes->{3.537732292795744*^9}],
+
+Cell[BoxData["481"], "Print",
+ CellChangeTimes->{3.537732292836746*^9}],
+
+Cell[BoxData["703"], "Print",
+ CellChangeTimes->{3.5377322932697706`*^9}],
+
+Cell[BoxData["1729"], "Print",
+ CellChangeTimes->{3.5377322986820803`*^9}],
+
+Cell[BoxData["2821"], "Print",
+ CellChangeTimes->{3.53773231370894*^9}],
+
+Cell[BoxData["2981"], "Print",
+ CellChangeTimes->{3.537732317105134*^9}],
+
+Cell[BoxData["3367"], "Print",
+ CellChangeTimes->{3.537732326614678*^9}],
+
+Cell[BoxData["4141"], "Print",
+ CellChangeTimes->{3.5377323517601166`*^9}],
+
+Cell[BoxData["4187"], "Print",
+ CellChangeTimes->{3.5377323537592306`*^9}],
+
+Cell[BoxData["5461"], "Print",
+ CellChangeTimes->{3.537732422429158*^9}],
+
+Cell[BoxData["6533"], "Print",
+ CellChangeTimes->{3.5377325103371863`*^9}],
+
+Cell[BoxData["6541"], "Print",
+ CellChangeTimes->{3.5377325113532443`*^9}],
+
+Cell[BoxData["6601"], "Print",
+ CellChangeTimes->{3.5377325164795375`*^9}],
+
+Cell[BoxData["7471"], "Print",
+ CellChangeTimes->{3.537732616568262*^9}],
+
+Cell[BoxData["7777"], "Print",
+ CellChangeTimes->{3.537732654350424*^9}],
+
+Cell[BoxData["8149"], "Print",
+ CellChangeTimes->{3.5377327101386147`*^9}],
+
+Cell[BoxData["8401"], "Print",
+ CellChangeTimes->{3.537732750151903*^9}],
+
+Cell[BoxData["8911"], "Print",
+ CellChangeTimes->{3.537732839026986*^9}],
+
+Cell[BoxData["10001"], "Print",
+ CellChangeTimes->{3.5377330680160837`*^9}],
+
+Cell[BoxData["11111"], "Print",
+ CellChangeTimes->{3.5377333699193516`*^9}],
+
+Cell[BoxData["12403"], "Print",
+ CellChangeTimes->{3.5377338098225126`*^9}],
+
+Cell[BoxData["13981"], "Print",
+ CellChangeTimes->{3.537734485758174*^9}],
+
+Cell[BoxData["14701"], "Print",
+ CellChangeTimes->{3.537734867549011*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{Automatic, 281}, {Automatic, 17}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1097, 29, 72, "Input"],
+Cell[CellGroupData[{
+Cell[1679, 53, 1387, 33, 112, "Input"],
+Cell[CellGroupData[{
+Cell[3091, 90, 72, 1, 23, "Print"],
+Cell[3166, 93, 73, 1, 23, "Print"],
+Cell[3242, 96, 71, 1, 23, "Print"],
+Cell[3316, 99, 71, 1, 23, "Print"],
+Cell[3390, 102, 73, 1, 23, "Print"],
+Cell[3466, 105, 74, 1, 23, "Print"],
+Cell[3543, 108, 71, 1, 23, "Print"],
+Cell[3617, 111, 72, 1, 23, "Print"],
+Cell[3692, 114, 72, 1, 23, "Print"],
+Cell[3767, 117, 74, 1, 23, "Print"],
+Cell[3844, 120, 74, 1, 23, "Print"],
+Cell[3921, 123, 72, 1, 23, "Print"],
+Cell[3996, 126, 74, 1, 23, "Print"],
+Cell[4073, 129, 74, 1, 23, "Print"],
+Cell[4150, 132, 74, 1, 23, "Print"],
+Cell[4227, 135, 72, 1, 23, "Print"],
+Cell[4302, 138, 72, 1, 23, "Print"],
+Cell[4377, 141, 74, 1, 23, "Print"],
+Cell[4454, 144, 72, 1, 23, "Print"],
+Cell[4529, 147, 72, 1, 23, "Print"],
+Cell[4604, 150, 75, 1, 23, "Print"],
+Cell[4682, 153, 75, 1, 23, "Print"],
+Cell[4760, 156, 75, 1, 23, "Print"],
+Cell[4838, 159, 73, 1, 23, "Print"],
+Cell[4914, 162, 73, 1, 23, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,188 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5668,        179]
+NotebookOptionsPosition[      5159,        158]
+NotebookOutlinePosition[      5503,        173]
+CellTagsIndexPosition[      5460,        170]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"xOld", " ", "=", " ", "0.0"}], ";", " ", 
+  RowBox[{"yOld", " ", "=", " ", "10.1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xNew", " ", "=", " ", "1.4"}], ";", " ", 
+  RowBox[{"yNew", " ", "=", " ", 
+   RowBox[{"-", "9.6"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", " ", "=", " ", "1"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.5377939469887075`*^9, 3.537793971760124*^9}, {
+  3.53779403410569*^9, 3.5377940356707797`*^9}, {3.5426475386517177`*^9, 
+  3.542647550203378*^9}, {3.5426478060930147`*^9, 3.542647808515153*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"NextPoint", "[", 
+    RowBox[{"x1_", ",", " ", "y1_", ",", " ", "x2_", ",", " ", "y2_"}], "]"}],
+    " ", ":=", " ", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", "y"}], "}"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", "y"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.5426475818601885`*^9, 3.5426475844273357`*^9}, {
+  3.5426479113320336`*^9, 3.542647940592707*^9}, {3.542648011673773*^9, 
+  3.542648020422273*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Slope", "[", 
+    RowBox[{"a_", ",", " ", "b_", ",", " ", "c_", ",", " ", "d_"}], "]"}], 
+   " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"d", "-", "b"}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"c", "-", "a"}], ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5377943230642176`*^9, 3.5377943463695507`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"While", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "0.1"}], " ", "\[GreaterEqual]", " ", "x2"}], " ", "||", 
+    " ", 
+    RowBox[{"x2", " ", "\[GreaterEqual]", " ", "0.1"}], " ", "||", " ", 
+    RowBox[{"9.9", " ", "\[GreaterEqual]", " ", "y2"}], " ", "||", " ", 
+    RowBox[{"y2", " ", "\[GreaterEqual]", " ", "10.1"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "++"}], ";"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.5377940373298745`*^9, 3.5377940399470243`*^9}, {
+  3.5377940804083385`*^9, 3.5377941927197623`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Abs", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"a", "-", "b"}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"a", "*", "b"}]}], ")"}]}], "]"}], " ", "\[Equal]", " ", 
+    RowBox[{"Abs", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "-", "c"}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"x", "*", "c"}]}], ")"}]}], "]"}]}], ",", " ", 
+   RowBox[{"{", "x", "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.537794857598791*^9, 3.5377948870224743`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Solve", "::", "ifun"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Inverse functions are being used by \
+\[NoBreak]\\!\\(Solve\\)\[NoBreak], so some solutions may not be found; use \
+Reduce for complete solution information. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Solve/ifun\\\", ButtonNote -> \
+\\\"Solve::ifun\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.537794887523503*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "c"}], "-", 
+       RowBox[{"Abs", "[", 
+        FractionBox[
+         RowBox[{"a", "-", "b"}], 
+         RowBox[{"1", "+", 
+          RowBox[{"a", " ", "b"}]}]], "]"}]}], 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       RowBox[{"c", " ", 
+        RowBox[{"Abs", "[", 
+         FractionBox[
+          RowBox[{"a", "-", "b"}], 
+          RowBox[{"1", "+", 
+           RowBox[{"a", " ", "b"}]}]], "]"}]}]}]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     FractionBox[
+      RowBox[{"c", "-", 
+       RowBox[{"Abs", "[", 
+        FractionBox[
+         RowBox[{"a", "-", "b"}], 
+         RowBox[{"1", "+", 
+          RowBox[{"a", " ", "b"}]}]], "]"}]}], 
+      RowBox[{"1", "+", 
+       RowBox[{"c", " ", 
+        RowBox[{"Abs", "[", 
+         FractionBox[
+          RowBox[{"a", "-", "b"}], 
+          RowBox[{"1", "+", 
+           RowBox[{"a", " ", "b"}]}]], "]"}]}]}]]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.537794887525503*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{Automatic, 208}, {Automatic, 9}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 588, 12, 72, "Input"],
+Cell[1148, 34, 656, 16, 132, "Input"],
+Cell[1807, 52, 375, 11, 31, "Input"],
+Cell[2185, 65, 632, 15, 92, "Input"],
+Cell[CellGroupData[{
+Cell[2842, 84, 659, 19, 72, "Input"],
+Cell[3504, 105, 531, 11, 39, "Message"],
+Cell[4038, 118, 1105, 37, 68, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

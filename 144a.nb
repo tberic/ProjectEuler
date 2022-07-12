@@ -1,0 +1,134 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3762,        124]
+NotebookOptionsPosition[      3375,        106]
+NotebookOutlinePosition[      3717,        121]
+CellTagsIndexPosition[      3674,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"rt", "[", 
+    RowBox[{"x_", ",", " ", "y_"}], "]"}], " ", ":=", " ", 
+   RowBox[{"Piecewise", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ReflectionTransform", "[", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", " ", 
+           RowBox[{"y", "/", 
+            RowBox[{"(", 
+             RowBox[{"4", "*", "x"}], ")"}]}]}], "}"}], "]"}], ",", " ", 
+        RowBox[{"x", " ", "\[NotEqual]", " ", "0"}]}], "}"}], ",", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ReflectionTransform", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", " ", "1"}], "}"}], "]"}], ",", " ", 
+        RowBox[{"x", " ", "\[Equal]", " ", "0"}]}], "}"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.542648555748892*^9, 3.54264855886007*^9}, {
+  3.5426488070102634`*^9, 3.5426488498997164`*^9}, {3.54264888771988*^9, 
+  3.5426488919521217`*^9}, {3.542648927341146*^9, 3.5426489736297936`*^9}, {
+  3.542649028938957*^9, 3.542649051274235*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"x1_", ",", " ", "y1_", ",", " ", "x2_", ",", " ", "y2_"}], "]"}],
+    " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"TranslationTransform", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "x2"}], ",", " ", 
+       RowBox[{"-", "y2"}]}], "}"}], "]"}], "[", 
+    RowBox[{"rt", "[", 
+     RowBox[{
+      RowBox[{"TranslationTransform", "[", 
+       RowBox[{"{", 
+        RowBox[{"x2", ",", " ", "y2"}], "}"}], "]"}], "[", 
+      RowBox[{"{", 
+       RowBox[{"x1", ",", " ", "y1"}], "}"}], "]"}], "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.5426491185960855`*^9, 3.5426492286793814`*^9}, {
+  3.5426493137702484`*^9, 3.5426493214776893`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{
+   RowBox[{"-", "1"}], ",", " ", "4", ",", " ", "0", ",", " ", "5"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5426492302154694`*^9, 3.5426492444642844`*^9}, {
+  3.5426492806983566`*^9, 3.5426492944201417`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TransformationFunction", "[", 
+   RowBox[{"(", 
+    TagBox[GridBox[{
+       {"1", "0", "0"},
+       {"0", "1", 
+        RowBox[{"-", "5"}]},
+       {"0", "0", "1"}
+      },
+      AutoDelete->False,
+      GridBoxDividers->{
+       "Columns" -> {{False}}, "ColumnsIndexed" -> {-2 -> True}, 
+        "Rows" -> {{False}}, "RowsIndexed" -> {-2 -> True}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     #& ], ")"}], "]"}], "[", 
+  RowBox[{"rt", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", "9"}], "}"}], "]"}], "]"}]], "Output",
+ CellChangeTimes->{3.54264929492117*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1130, 28, 92, "Input"],
+Cell[1690, 50, 728, 21, 52, "Input"],
+Cell[CellGroupData[{
+Cell[2443, 75, 257, 6, 31, "Input"],
+Cell[2703, 83, 656, 20, 58, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
