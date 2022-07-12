@@ -1,0 +1,185 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5780,        176]
+NotebookOptionsPosition[      5029,        144]
+NotebookOutlinePosition[      5374,        159]
+CellTagsIndexPosition[      5331,        156]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"p", " ", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Prime", "[", "n", "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", " ", "1", ",", " ", "100"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.537753188292429*^9, 3.537753201796201*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "3", ",", "5", ",", "7", ",", "11", ",", "13", ",", "17", ",", 
+   "19", ",", "23", ",", "29", ",", "31", ",", "37", ",", "41", ",", "43", 
+   ",", "47", ",", "53", ",", "59", ",", "61", ",", "67", ",", "71", ",", 
+   "73", ",", "79", ",", "83", ",", "89", ",", "97", ",", "101", ",", "103", 
+   ",", "107", ",", "109", ",", "113", ",", "127", ",", "131", ",", "137", 
+   ",", "139", ",", "149", ",", "151", ",", "157", ",", "163", ",", "167", 
+   ",", "173", ",", "179", ",", "181", ",", "191", ",", "193", ",", "197", 
+   ",", "199", ",", "211", ",", "223", ",", "227", ",", "229", ",", "233", 
+   ",", "239", ",", "241", ",", "251", ",", "257", ",", "263", ",", "269", 
+   ",", "271", ",", "277", ",", "281", ",", "283", ",", "293", ",", "307", 
+   ",", "311", ",", "313", ",", "317", ",", "331", ",", "337", ",", "347", 
+   ",", "349", ",", "353", ",", "359", ",", "367", ",", "373", ",", "379", 
+   ",", "383", ",", "389", ",", "397", ",", "401", ",", "409", ",", "419", 
+   ",", "421", ",", "431", ",", "433", ",", "439", ",", "443", ",", "449", 
+   ",", "457", ",", "461", ",", "463", ",", "467", ",", "479", ",", "487", 
+   ",", "491", ",", "499", ",", "503", ",", "509", ",", "521", ",", "523", 
+   ",", "541"}], "}"}]], "Output",
+ CellChangeTimes->{{3.537753194626791*^9, 3.5377532021922235`*^9}, 
+   3.537755534305613*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Product", "[", 
+   RowBox[{
+    RowBox[{"p", "[", 
+     RowBox[{"[", "i", "]"}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "1", ",", " ", "7"}], "}"}]}], "]"}], "/", 
+  RowBox[{"Product", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"p", "[", 
+      RowBox[{"[", "i", "]"}], "]"}], "-", "1"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "1", ",", " ", "7"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.5377544586050863`*^9, 3.537754479445278*^9}, {
+  3.5377557585904417`*^9, 3.5377557713201694`*^9}}],
+
+Cell[BoxData[
+ FractionBox["17017", "3072"]], "Output",
+ CellChangeTimes->{{3.5377544550078807`*^9, 3.5377545014635377`*^9}, 
+   3.5377555520596285`*^9, 3.5377557714951797`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.537755773501294*^9, 3.537755774429347*^9}}],
+
+Cell[BoxData["5.539388020833333`"], "Output",
+ CellChangeTimes->{3.5377557744703493`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Product", "[", 
+  RowBox[{
+   RowBox[{"p", "[", 
+    RowBox[{"[", "i", "]"}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", " ", "1", ",", " ", "7"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.53775330038984*^9, 3.5377533105804234`*^9}, {
+  3.5377541264470882`*^9, 3.5377541271531286`*^9}, {3.537754592838764*^9, 
+  3.5377546304689164`*^9}, {3.537754864364294*^9, 3.5377548799451857`*^9}, {
+  3.537754995307784*^9, 3.537754996518853*^9}, {3.5377555591240325`*^9, 
+  3.5377555620502*^9}}],
+
+Cell[BoxData["510510"], "Output",
+ CellChangeTimes->{
+  3.5377533109014416`*^9, 3.5377534551656933`*^9, 3.5377541277471623`*^9, {
+   3.537754593443799*^9, 3.537754648605954*^9}, 3.5377548803262076`*^9, 
+   3.5377549968748736`*^9, {3.5377555570759153`*^9, 3.537755562208209*^9}, 
+   3.5377557779875507`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FactorInteger", "[", "892371480", "]"}]], "Input",
+ CellChangeTimes->{{3.5377549632069483`*^9, 3.5377549757906675`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"11", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"13", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"17", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"19", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"23", ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.5377549673841867`*^9, 3.537754976232693*^9}}]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{160, Automatic}, {55, Automatic}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 288, 7, 31, "Input"],
+Cell[870, 31, 1385, 21, 126, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2292, 57, 577, 16, 31, "Input"],
+Cell[2872, 75, 177, 3, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3086, 83, 120, 2, 31, "Input"],
+Cell[3209, 87, 89, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3335, 93, 528, 11, 31, "Input"],
+Cell[3866, 106, 306, 5, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4209, 116, 144, 2, 31, "Input"],
+Cell[4356, 120, 657, 21, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
