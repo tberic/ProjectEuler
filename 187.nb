@@ -1,0 +1,89 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2231,         80]
+NotebookOptionsPosition[      1848,         62]
+NotebookOutlinePosition[      2190,         77]
+CellTagsIndexPosition[      2147,         74]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"n", " ", "=", " ", 
+   RowBox[{"10", "^", "8"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5392740870035124`*^9, 3.5392740886226053`*^9}, {
+  3.5392742277525625`*^9, 3.5392742290896397`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"p", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Prime", "[", "n", "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", " ", "1", ",", " ", 
+       RowBox[{"PrimePi", "[", 
+        RowBox[{"Sqrt", "[", "n", "]"}], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.5392741550844064`*^9, 3.5392741905544353`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"PrimePi", "[", 
+     RowBox[{"n", "/", 
+      RowBox[{"p", "[", 
+       RowBox[{"[", "i", "]"}], "]"}]}], "]"}], " ", "-", " ", "i", " ", "+", 
+    " ", "1"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", " ", "1", ",", " ", 
+     RowBox[{"Length", "[", "p", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5392740916477785`*^9, 3.5392741022983875`*^9}, {
+  3.5392741961047525`*^9, 3.5392742232533054`*^9}, {3.5392743591310773`*^9, 
+  3.53927437893721*^9}}],
+
+Cell[BoxData["17427258"], "Output",
+ CellChangeTimes->{3.5392743794182377`*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 225, 5, 31, "Input"],
+Cell[785, 27, 397, 11, 31, "Input"],
+Cell[CellGroupData[{
+Cell[1207, 42, 543, 14, 31, "Input"],
+Cell[1753, 58, 79, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
